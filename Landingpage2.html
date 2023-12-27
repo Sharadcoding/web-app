@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/rider.css">
+<link rel="stylesheet" href="css/style1.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: auto;
+  margin: auto;
+  background-color: #ffffff;
+  height: auto;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #020202;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: rgb(255, 255, 255);
+  padding: 16px 14px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: rgb(180, 167, 167);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.active {
+  background-color: #212b20;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a><img src="images/Untitled_Project_V3.gif" height="17rem" width="30rem" alt="logo"></a>
+  <div id="myLinks">
+        <div class="avatar">
+          <img src="images/avatar.png" height="100rem" width="100rem" alt="avatar" />
+        </div>
+        <div class="h1-color"><h1 class="title">Sharad Thing </h1> </div>
+    
+    <a href="#news">View Profile</a>
+    <a href="#contact">Help & Support</a>
+    <a href="#about">Setting & Privacy</a>
+    <a href="index.html">Logout</a>
+   
+  </div>
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    
+
+    <br><br><br><br>
+
+    <section>
+      
+        <div class="onoff">
+            
+            <input id="toggleSwitch" class="toggle" type="checkbox" role="switch" name="toggle" value="on" checked>
+        <label for="toggleSwitch" class="slot">
+          <span  class="slot__label">OOffline</span>
+          <span class="slot__label">OOnline</span>
+        </label>
+        <div class="curtain"></div>
+        </div>
+        </section>
+
+
+       
+       <div class="content">
+        <div >
+          <h1 class="h2_slogan">तपाई Online हुनुभयो</h1>
+         </div>
+         <style> .h2_slogan{
+          text-align: center;
+          
+        }</style>
+            <!-- Div with white background in the middle of the header section -->
+            <!-- section for details --> 
+            <div class="details">
+                <h2>How It Works</h2>
+                <div class="infoContainer">
+                    <div class="info1">
+                        <div class="info-topic">
+                            <img src="images/1.png" alt="1"><p>Sign up for Driver Account</p>
+                        </div>
+                        <img src="images/signup.png" alt="User Location" height="100 rem" width="100 rem"> 
+                        <p>Sign up for an  <span style="color: rgb(30, 229, 255);">Driver's Account</span> in a go.</p>
+                    </div>
+                    <div class="info1">
+                        <div class="info-topic">
+                            <img src="images/2.png" alt="2"><p>Choose your Auto Station</p>
+                        </div>
+                        <img src="images/choose.png" alt="Rider Selection">
+                        <p>Choose from a <span style="color: rgb(30, 229, 255);">wide range of Auto Station</span> in Hetauda</p>
+                    </div>
+                    <div class="info1">
+                        <div class="info-topic">
+                            <img src="images/3.png" alt="3" ><p>Get Passengers and Start Earning</p>
+                        </div>
+                        <img src="images/StartEarning.png " alt="Call Rider" height="100 rem" width="100 rem">
+                        <p>Discuss your pricing and details with the <span style="color: rgb(30, 229, 255);">Customer</p>
+                        <div></div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- Toogle button -->
+
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function () {
+          const toggleSwitch = document.getElementById('toggleSwitch');
+    
+          toggleSwitch.addEventListener('change', function () {
+            if (toggleSwitch.checked) {
+              window.location.href = 'landingpage.html';
+            } else {
+              window.location.href = 'landingpage.html';
+            }
+          });
+        });
+      </script>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<!-- Toogle<script src="riderscript.js"></script> button -->
+
+</body>
+</html>

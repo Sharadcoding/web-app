@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <title>Login</title>
+</head>
+<body>
+
+<div class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <div class="input-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" required>
+        </div>
+        
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+<script > $(document).ready(function() {
+    $("#phoneNumber").intlTelInput({
+        separateDialCode: true,
+        nationalMode: false,
+        autoPlaceholder: "aggressive",
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+    
+    $("#loginForm").submit(function(event) {
+        event.preventDefault();
+        
+        // Get the selected country code
+        var countryCode = $("#phoneNumber").intlTelInput("getSelectedCountryData").dialCode;
+        
+        // Get the phone number in international format
+        var phoneNumber = $("#phoneNumber").intlTelInput("getNumber");
+        
+        // Add your login logic here
+        alert("Country Code: +" + countryCode + "\nPhone Number: " + phoneNumber);
+    });
+});
+</script>
+</body>
+</html>

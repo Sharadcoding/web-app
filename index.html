@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Autosewa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <img src="images/Untitled_Project_V3.gif"  alt="Loading..." />
+    </div>
+    <header>
+        <div>
+        <nav>
+            <!-- Navigation menu -->
+            <div class="logoContainer">
+                <!-- Logo -->
+                <a href="/public/index.html"><img src="images/Untitled_Project_V3.gif" height="50rem" width="50rem" alt="logo"></a>
+            </div>
+            <div class="contactContainer">
+                <ul class="contactList">
+                    <li class="nav-link"><a href="#">About Us</a><span> |</span></li>
+                    <li class="nav-link"><a href="#">FAQs</a><span> |</span></li>
+                    <li class="nav-link"><a href="#">Contact </a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            
+        </nav>
+        
+    </div>
+    <div class="banner">
+        <div class="button-container">
+            <a href="login.html"><button id="signInBtn">Sign In</button></a>
+            <a href="signup.html"><button id="signUpBtn">Sign Up</button> </a>
+        </div>
+        <h1>Get the nearest Auto-Users <br> to pick in minutes</h1>
+        <h3>Free of service charge </h3>
+        
+        
+    </div>
+    
+        
+        
+        <div class="content">
+            <!-- Div with white background in the middle of the header section -->
+            <!-- section for details --> 
+            <div class="details">
+                <h2>How It Works</h2>
+                <div class="infoContainer">
+                    <div class="info1">
+                        <div class="info-topic">
+                            <img src="images/1.png" alt="1"><p>Sign up for Driver Account</p>
+                        </div>
+                        <img src="images/signup.png" alt="User Location" height="100 rem" width="100 rem"> 
+                        <p>Sign up for an  <span style="color: rgb(30, 229, 255);">Driver's Account</span> in a go.</p>
+                    </div>
+                    <div class="info1">
+                        <div class="info-topic">
+                            <img src="images/2.png" alt="2"><p>Choose your Auto Station</p>
+                        </div>
+                        <img src="images/choose.png" alt="Rider Selection">
+                        <p>Choose from a <span style="color: rgb(30, 229, 255);">wide range of Auto Station</span> in Hetauda</p>
+                    </div>
+                    <div class="info1">
+                        <div class="info-topic">
+                            <img src="images/3.png" alt="3" ><p>Get Passengers and Start Earning</p>
+                        </div>
+                        <img src="images/StartEarning.png " alt="Call Rider" height="100 rem" width="100 rem">
+                        <p>Discuss your pricing and details with the <span style="color: rgb(30, 229, 255);">Customer</p>
+                        <div></div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+    
+    <footer>
+        <section>
+            <!-- Footer section -->
+            <p>This is the footer section of the page</p>
+        </section>
+    </footer>
+    <!-- Go To Top button -->
+    <button onclick="topFunction()" id="goToTop" title="Go to top"><img src="images/up.png" height="15" width="15" alt="up"></button>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.contactList');
+        const links = document.querySelectorAll('.contactList li');
+
+
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navLinks.classList.toggle("active");
+        }
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navLinks.classList.remove("active");
+        }
+
+        // Get the button
+        let goToTop = document.getElementById("goToTop");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                goToTop.style.display = "block";
+            } else {
+                goToTop.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

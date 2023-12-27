@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/rider.css">
+<link rel="stylesheet" href="css/style1.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: auto;
+  margin: auto;
+  background-color: #ffffff;
+  height: auto;
+  color: rgb(73, 70, 70);
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: rgb(255, 255, 255);
+  padding: 16px 14px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: rgb(180, 167, 167);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+.active {
+  background-color: #444343;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<!-- Simulate a smartphone / tablet -->
+<div class="mobile-container">
+
+<!-- Top Navigation Menu -->
+<div class="topnav">
+    
+  <a><img class="logo-image" src="images/Untitled_Project_V3.gif" height="17rem" width="30rem" alt="logo"></a>
+  <div id="myLinks">
+        <div class="avatar">
+          <img src="images/avatar.png" height="100rem" width="100rem" alt="avatar" />
+        </div>
+        <div class="h1-color"><h1 class="title">Sharad Thing </h1> </div>
+    
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+   
+  </div>
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    
+
+    <br><br><br><br>
+
+    <section>
+      
+        <div class="onoff">
+            
+            <input id="toggleSwitch" class="toggle" type="checkbox" role="switch" name="toggle" value="on">
+        <label for="toggleSwitch" class="slot">
+          <span  class="slot__label">OOffline</span>
+          <span class="slot__label">OOnline</span>
+        </label>
+        <div class="curtain"></div>
+        </div>
+        </section>
+        <div>
+
+            <div class="content">
+                <div></div>
+            <h1>This is Offline page.html</h1>
+      <h2>Nothing is here! </h2>
+        </div>
+
+<!-- Toogle button -->
+
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function () {
+          const toggleSwitch = document.getElementById('toggleSwitch');
+    
+          toggleSwitch.addEventListener('change', function () {
+            if (toggleSwitch.checked) {
+              window.location.href = 'Landingpage2.html';
+            } else {
+              window.location.href = 'Landingpage2.html';
+            }
+          });
+        });
+      </script>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<!-- Toogle <script src="riderscript.js"></script> 
+
+</body>
+</html>
