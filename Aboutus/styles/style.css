@@ -141,15 +141,7 @@ hr {
   display: none;
 }
 
-@media (max-width: 700px) {
-  #bg-img-container {
-    height: 105vh;
-    background-image: url("../images/Untitled_Project_V3.gif");
-    background-position: center;
-    background-size: cover;
-    overflow-x: hidden;
-    position: relative;
-  }
+
 
   /* .bottom-navbar {
     display: none;
