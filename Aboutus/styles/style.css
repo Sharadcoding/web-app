@@ -22,14 +22,7 @@ body {
     9px -9px 39px #ffffff;
 }
 
-#bg-img-container {
-  height: 110vh;
-  background-image: url('../images/Untitled_Project_V3.gif');
-  background-position: center;
-  background-size: cover;
-  overflow-x: hidden;
-  position: relative;
-}
+
 
 #nav-bar {
   position: sticky;
